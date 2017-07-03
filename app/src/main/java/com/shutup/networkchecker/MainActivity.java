@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity{
 
             mResultView.setText(mSpannedString);
             int stage = resultMessage.getStage();
-            if (stage < getResources().getInteger(R.integer.stage_google)) {
+            if (stage < getResources().getInteger(R.integer.stage_outter_url)) {
                 stage++;
                 if (NetworkUtils.isMobileEnable(getApplicationContext())) {
                     if (stage == getResources().getInteger(R.integer.stage_local_gateway)) {
@@ -120,9 +120,9 @@ public class MainActivity extends AppCompatActivity{
             String result = url.substring(0,url.lastIndexOf('.'));
             result += ".1";
             return result;
-        }else if (stage == getResources().getInteger(R.integer.stage_baidu)) {
+        }else if (stage == getResources().getInteger(R.integer.stage_inner_url)) {
             return getResources().getStringArray(R.array.urls)[0];
-        }else if (stage == getResources().getInteger(R.integer.stage_google)) {
+        }else if (stage == getResources().getInteger(R.integer.stage_outter_url)) {
             return getResources().getStringArray(R.array.urls)[1];
         }else {
             return null;
