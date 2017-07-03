@@ -2,6 +2,6 @@
 <resources>
     <integer name="stage_local">1</integer>
     <integer name="stage_local_gateway">2</integer>
-    <integer name="stage_baidu">3</integer>
-    <integer name="stage_google">4</integer>
+    <integer name="stage_inner_url">3</integer>
+    <integer name="stage_outter_url">4</integer>
 </resources>
