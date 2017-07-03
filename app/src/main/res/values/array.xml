@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="urls">
+        <item> www.baidu.com</item>
+        <item> google.com</item>
+    </array>
+</resources>

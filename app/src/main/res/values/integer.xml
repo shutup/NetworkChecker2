@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="stage_local">1</integer>
+    <integer name="stage_local_gateway">2</integer>
+    <integer name="stage_baidu">3</integer>
+    <integer name="stage_google">4</integer>
+</resources>
