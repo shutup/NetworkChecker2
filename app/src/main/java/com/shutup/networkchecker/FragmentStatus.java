@@ -81,7 +81,7 @@ public class FragmentStatus extends Fragment {
     public void onViewClicked() {
         if (mCheckBtn.getText().toString().equals(getText(R.string.check)) || mCheckBtn.getText().toString().equals(getText(R.string.recheck))) {
             if (!NetworkUtils.isNetworkEnable(getActivity().getApplicationContext())) {
-                Toast.makeText(getActivity(), "please connect to network !", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.alert_msg, Toast.LENGTH_SHORT).show();
                 return;
             }
             restore();

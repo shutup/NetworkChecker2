@@ -1,116 +1,109 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.shutup.networkchecker.FragmentStatus">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <View
-                    android:id="@+id/stage_local"
-                    android:layout_width="3dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:background="@color/colorLineNormal"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:drawableLeft="@drawable/ic_mobile"
-                    android:drawablePadding="@dimen/rightPad"
-                    android:drawableStart="@drawable/ic_mobile"
-                    android:text="@string/device"/>
-
-                <View
-                    android:id="@+id/stage_local_gateway"
-                    android:layout_width="3dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:background="@color/colorLineNormal"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:drawableLeft="@drawable/ic_router"
-                    android:drawablePadding="@dimen/rightPad"
-                    android:drawableStart="@drawable/ic_router"
-                    android:text="@string/router"/>
-
-                <View
-                    android:id="@+id/stage_inner_url"
-                    android:layout_width="3dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:background="@color/colorLineNormal"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:drawableLeft="@drawable/ic_server"
-                    android:drawablePadding="@dimen/rightPad"
-                    android:drawableStart="@drawable/ic_server"
-                    android:text="@string/innernet"
-                    />
-
-                <View
-                    android:id="@+id/stage_gfw"
-                    android:layout_width="3dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:background="@color/colorLineNormal"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:drawableLeft="@drawable/ic_gfw_wall"
-                    android:drawablePadding="@dimen/rightPad"
-                    android:drawableStart="@drawable/ic_gfw_wall"
-                    android:text="@string/gfw_wall"/>
-
-                <View
-                    android:id="@+id/stage_outer_url"
-                    android:layout_width="3dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:background="@color/colorLineNormal"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/topMargin"
-                    android:drawableLeft="@drawable/ic_internet"
-                    android:drawablePadding="@dimen/rightPad"
-                    android:drawableStart="@drawable/ic_internet"
-                    android:text="@string/internet"/>
-            </LinearLayout>
-        </ScrollView>
-
-        <Button
-            android:id="@+id/checkBtn"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/check"
-            />
-    </LinearLayout>
+            android:gravity="center"
+            android:orientation="vertical">
 
+            <View
+                android:id="@+id/stage_local"
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/topMargin"
+                android:background="@color/colorLineNormal"/>
 
-</FrameLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="@dimen/rightPad"
+                android:drawableStart="@drawable/ic_mobile"
+                android:text="@string/device"/>
+
+            <View
+                android:id="@+id/stage_local_gateway"
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/topMargin"
+                android:background="@color/colorLineNormal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:drawableLeft="@drawable/ic_router"
+                android:drawablePadding="@dimen/rightPad"
+                android:drawableStart="@drawable/ic_router"
+                android:text="@string/router"/>
+
+            <View
+                android:id="@+id/stage_inner_url"
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/topMargin"
+                android:background="@color/colorLineNormal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:drawableLeft="@drawable/ic_server"
+                android:drawablePadding="@dimen/rightPad"
+                android:drawableStart="@drawable/ic_server"
+                android:text="@string/innernet"
+                />
+
+            <View
+                android:id="@+id/stage_gfw"
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/topMargin"
+                android:background="@color/colorLineNormal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:drawableLeft="@drawable/ic_gfw_wall"
+                android:drawablePadding="@dimen/rightPad"
+                android:drawableStart="@drawable/ic_gfw_wall"
+                android:text="@string/gfw_wall"/>
+
+            <View
+                android:id="@+id/stage_outer_url"
+                android:layout_width="3dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/topMargin"
+                android:background="@color/colorLineNormal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:drawableLeft="@drawable/ic_internet"
+                android:drawablePadding="@dimen/rightPad"
+                android:drawableStart="@drawable/ic_internet"
+                android:text="@string/internet"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/checkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/check"
+        />
+</LinearLayout>
+

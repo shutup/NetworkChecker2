@@ -2,7 +2,6 @@ package com.shutup.networkchecker;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.util.Log;
 
 import org.greenrobot.eventbus.EventBus;
 

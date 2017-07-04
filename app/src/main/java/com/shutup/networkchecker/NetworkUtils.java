@@ -44,7 +44,7 @@ public class NetworkUtils {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return new ResultMessage(str,retVal == 0?true:false,stage);
+        return new ResultMessage(str,retVal == 0,stage);
     }
 
     public static String getLocalIpAddress(){

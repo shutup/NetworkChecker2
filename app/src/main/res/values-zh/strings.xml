@@ -12,4 +12,5 @@
     <string name="start_check">开始检测</string>
     <string name="details">详情</string>
     <string name="status">状态</string>
+    <string name="alert_msg">请先连接到网络</string>
 </resources>
