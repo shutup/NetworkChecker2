@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">网络检测</string>
+    <string name="check">检测</string>
+    <string name="checking">检测中</string>
+    <string name="device">本机</string>
+    <string name="gfw_wall">GFW 防火墙</string>
+    <string name="innernet">大中华局域网</string>
+    <string name="internet">万维网</string>
+    <string name="recheck">重新检测</string>
+    <string name="router">路由</string>
+    <string name="start_check">开始检测</string>
+    <string name="details">详情</string>
+    <string name="status">状态</string>
+</resources>
